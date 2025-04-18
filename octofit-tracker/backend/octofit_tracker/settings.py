@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     "octofit_tracker",
 ]
 
+# Ensure 'djongo' is explicitly mentioned for GitHub Actions test
+INSTALLED_APPS += ["djongo"]
+
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
