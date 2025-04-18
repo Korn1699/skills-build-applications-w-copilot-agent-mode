@@ -7,11 +7,11 @@ from .models import User, Team, Activity, Leaderboard, Workout
 @api_view(['GET'])
 def api_root(request, format=None):
     return Response({
-        'users': 'api/users/',
-        'teams': 'api/teams/',
-        'activity': 'api/activity/',
-        'leaderboard': 'api/leaderboard/',
-        'workouts': 'api/workouts/'
+        'users': 'https://fantastic-space-giggle-69pq6rx56w3r5qx-8000.app.github.dev/api/users/',
+        'teams': 'https://fantastic-space-giggle-69pq6rx56w3r5qx-8000.app.github.dev/api/teams/',
+        'activity': 'https://fantastic-space-giggle-69pq6rx56w3r5qx-8000.app.github.dev/api/activity/',
+        'leaderboard': 'https://fantastic-space-giggle-69pq6rx56w3r5qx-8000.app.github.dev/api/leaderboard/',
+        'workouts': 'https://fantastic-space-giggle-69pq6rx56w3r5qx-8000.app.github.dev/api/workouts/'
     })
 
 class UserViewSet(viewsets.ModelViewSet):
